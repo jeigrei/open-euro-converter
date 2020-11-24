@@ -1,0 +1,73 @@
+EESchema Schematic File Version 4
+LIBS:test_board_trim-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L WQP-PJ301M-12_JACK:WQP-PJ301M-12_JACK U1001
+U 1 1 5D754F25
+P 2100 1700
+F 0 "U1001" H 2104 1978 50  0000 C CNN
+F 1 "WQP-PJ301M-12_JACK" H 2104 1887 50  0000 C CNN
+F 2 "WQP-PJ301M-12_JACK:WQP-PJ301M-12_JACK" H 2100 1700 50  0001 L BNN
+F 3 "" H 2100 1700 50  0001 C CNN
+	1    2100 1700
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x02 J1001
+U 1 1 5D755009
+P 3300 1600
+F 0 "J1001" H 3380 1592 50  0000 L CNN
+F 1 "Screw_Terminal_01x02" H 3380 1501 50  0000 L CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 3300 1600 50  0001 C CNN
+F 3 "~" H 3300 1600 50  0001 C CNN
+	1    3300 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_POT_US RV1001
+U 1 1 5D7551DE
+P 2700 1750
+F 0 "RV1001" H 2632 1796 50  0000 R CNN
+F 1 "R_POT_US" H 2632 1705 50  0000 R CNN
+F 2 "euroconverter:Thonk_9mm_TrimPot" H 2700 1750 50  0001 C CNN
+F 3 "~" H 2700 1750 50  0001 C CNN
+	1    2700 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2300 1600 2700 1600
+Wire Wire Line
+	2850 1750 2950 1750
+Wire Wire Line
+	2950 1750 2950 1600
+Wire Wire Line
+	2950 1600 3100 1600
+Wire Wire Line
+	2300 1800 2350 1800
+Wire Wire Line
+	2350 1800 2350 2000
+Wire Wire Line
+	2350 2000 2700 2000
+Wire Wire Line
+	2700 2000 2700 1900
+Wire Wire Line
+	3100 1700 3050 1700
+Wire Wire Line
+	3050 1700 3050 2000
+Wire Wire Line
+	3050 2000 2700 2000
+Connection ~ 2700 2000
+$EndSCHEMATC
